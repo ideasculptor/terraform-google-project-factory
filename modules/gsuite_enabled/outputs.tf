@@ -61,6 +61,11 @@ output "service_account_unique_id" {
   description = "The unique id of the default service account"
 }
 
+output "project_bucket_name" {
+  description = "The name of the project's bucket"
+  value       = module.project-factory.project_bucket_name
+}
+
 output "project_bucket_self_link" {
   value       = module.project-factory.project_bucket_self_link
   description = "Project's bucket selfLink"
